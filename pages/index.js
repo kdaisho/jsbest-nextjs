@@ -1,16 +1,13 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui'
 import Course from 'src/components/Course'
+import { StyledPageContainer } from './styles'
 
 export default function Home({ courses }) {
   return (
-    <div>
+    <StyledPageContainer>
       {courses.map(course => (
-        <div key={course.slug} sx={{ variant: 'containers.card' }}>
-          <Course course={course} />
-        </div>
+        <Course key={course.slug} course={course} />
       ))}
-    </div>
+    </StyledPageContainer>
   )
 }
 

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Nav from 'src/components/Nav'
-import { ThemeProvider } from 'theme-ui'
+import { ThemeProvider } from 'styled-components'
 import theme from 'theme'
 import '../styles/globals.css'
 
@@ -35,7 +35,6 @@ function MyApp({ Component, pageProps }) {
         <meta property='og:site_name' content='JavaScriptBest' />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />
-        <link rel='stylesheet' href='/dist/style.css' />
         <title>Welcome to JS Best</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>

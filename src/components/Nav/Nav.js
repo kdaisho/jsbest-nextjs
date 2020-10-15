@@ -1,3 +1,5 @@
+import React from 'react'
+
 const Nav = () => (
   <section className='nav'>
     <button id='hamburger' className='nav__hamburger'>

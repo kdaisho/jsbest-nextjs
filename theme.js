@@ -1,24 +1,36 @@
-import { roboto } from '@theme-ui/presets'
-
 const theme = {
-  ...roboto,
-  containers: {
-    card: {
-      boxShadow: '0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24)',
-      border: '1px solid',
-      borderColor: 'muted',
-      borderRadius: '4px',
-      p: 2,
-    },
-    page: {
-      width: '100%',
-      maxWidth: '960px',
-      m: 0,
-      mx: 'auth',
-    },
+  breakpoints: {
+    maxMobile: '768px',
+    maxTablet: '1024px',
   },
-  styles: {
-    ...roboto.styles,
+  container: {
+    display: 'flex',
+    flexFlow: 'row wrap',
+    alignItems: 'flex-start',
+    justifyContent: ['center', 'flex-start'],
+  },
+  colors: {
+    background: '',
+  },
+  courses: {
+    card: {
+      background: '#fff',
+      flex: '0 0 98%',
+      overflow: 'hidden',
+      margin: '1rem .5rem 2rem',
+      flex: ['0 0 98%', '0 0 47%', '0 0 320px'],
+      hero: {
+        alignItems: 'flex-start',
+        display: 'flex',
+        flexFlow: 'column wrap',
+        justifyContent: 'flex-end',
+        height: '200px',
+        position: 'relative',
+      },
+      title: {
+        background: 'blue',
+      },
+    },
   },
 }
 
